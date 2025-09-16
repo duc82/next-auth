@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@layer base {
+  button,
+  a {
+    @apply cursor-pointer;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 dark:text-white;
+  }
+}
