@@ -3,7 +3,6 @@ import Credentials from "next-auth/providers/credentials";
 import { signInSchema } from "@/schemas/auth";
 import { login, refreshToken } from "@/actions/auth";
 import { jwtDecode, JwtPayload } from "jwt-decode";
-import { redirect } from "next/navigation";
 
 class SignInError extends CredentialsSignin {
   constructor(code: string) {

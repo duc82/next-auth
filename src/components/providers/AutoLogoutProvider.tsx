@@ -16,7 +16,7 @@ export default function AutoLogoutProvider({
     if (session?.error === error) {
       signOut({ redirect: true, redirectTo: "/login" });
     }
-  }, [session]);
+  }, [session, error]);
 
   return children;
 }
