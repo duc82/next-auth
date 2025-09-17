@@ -68,6 +68,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         };
       }
 
+      // Refresh token
       if (Date.now() >= token.accessTokenExpires) {
         try {
           const refreshResponse = await refreshToken(token.token.refreshToken);

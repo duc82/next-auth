@@ -14,7 +14,7 @@ export default function Header({ user }: { user?: User }) {
           </Link>
         </div>
         <nav className="flex-1">
-          <ul className="flex flex-col mt-4 font-medium lg:justify-center lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="flex mt-4 font-medium justify-center space-x-8 lg:mt-0">
             <li>
               <Link
                 href="/"
